@@ -16,6 +16,9 @@ cd ros2_ws/src
 # Clone the repository
 git clone https://github.com/Z-U-k0rkmaz/car_model2.git
 
+# Navigate back to the ROS 2 workspace
+cd ros2_ws
+
 # Build the workspace
 colcon build --symlink-install
 ```
