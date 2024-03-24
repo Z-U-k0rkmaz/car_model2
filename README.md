@@ -22,6 +22,10 @@ colcon build --symlink-install
 
 ## simulation
 ```bash
+# Before launching the simulation, ensure that ROS 2 environment is properly sourced:
+source /opt/ros/foxy/setup.bash
+source ~/ros2_ws/install/setup.bash
+
 # Gazebo launch file
 launch car_model2 launch_sim.launch.py
 
