@@ -20,8 +20,12 @@ git clone https://github.com/Z-U-k0rkmaz/car_model2.git
 colcon build --symlink-install
 ```
 
-## gazebo launch simulation
+## simulation
 ```bash
+# Gazebo launch file
 launch car_model2 launch_sim.launch.py
+
+# teleop twist keyboard
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
