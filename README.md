@@ -30,7 +30,7 @@ source /opt/ros/foxy/setup.bash
 source ~/ros2_ws/install/setup.bash
 
 # Gazebo launch file
-launch car_model2 launch_sim.launch.py
+ros2 launch car_model2 launch_sim.launch.py
 
 # teleop twist keyboard
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
