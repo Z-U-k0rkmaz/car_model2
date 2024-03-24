@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo>
+        <plugin name="front_wheel" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Wheel Information -->
+            <left_joint>sol_on_teker_joint</left_joint>
+            <right_joint>sag_on_teker_joint</right_joint>
+            <wheel_separation>0.44</wheel_separation> <!-- Ön ve arka tekerler arası mesafe -->
+            <wheel_diameter>0.33</wheel_diameter> <!-- Tekerlek çapı -->
+
+
+            <!-- Limits -->
+            <max_wheel_torque>5</max_wheel_torque>
+            <max_wheel_acceleration>5</max_wheel_acceleration>
+
+            
+            <!-- Output -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+
+        </plugin>
+    </gazebo>
+
+    <gazebo>
+        <plugin name="rear_wheel" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Wheel Information -->
+            <left_joint>sol_arka_teker_joint</left_joint>
+            <right_joint>sag_arka_teker_joint</right_joint>
+            <wheel_separation>0.44</wheel_separation> <!-- Ön ve arka tekerler arası mesafe -->
+            <wheel_diameter>0.33</wheel_diameter> <!-- Tekerlek çapı -->
+
+
+            <!-- Limits -->
+            <max_wheel_torque>5</max_wheel_torque>
+            <max_wheel_acceleration>5</max_wheel_acceleration>
+
+            
+            <!-- Output -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+
+        </plugin>
+    </gazebo>
+
+
+
+</robot>
