@@ -47,7 +47,7 @@
             </geometry>
             <origin xyz="0 0 0.04"/>
         </collision>
-        <xacro:inertial_box mass="1.0" x="0.615" y="0.345" z="0.09">
+        <xacro:inertial_box mass="0.5" x="0.615" y="0.345" z="0.09">
             <origin xyz="0 0 0.04" rpy = "0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -135,7 +135,7 @@
             </geometry>
            
         </collision>
-        <xacro:inertial_cylinder mass="0.5" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
+        <xacro:inertial_cylinder mass="1" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
             <origin xyz="0.225 0.228 0.0825" rpy="${pi/2} 0 0"/>
 
         </xacro:inertial_cylinder>
@@ -170,7 +170,7 @@
             </geometry>
            
         </collision>
-        <xacro:inertial_cylinder mass="0.5" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
+        <xacro:inertial_cylinder mass="1" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
         <origin xyz="-0.225 0.228 0.0825" rpy="-${pi/2} 0 0"/>
         </xacro:inertial_cylinder>
     </link>
@@ -202,7 +202,7 @@
             </geometry>
             
         </collision>
-        <xacro:inertial_cylinder mass="0.5" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
+        <xacro:inertial_cylinder mass="1" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
             <origin xyz="0.225 -0.228 0.0825" rpy = "${pi/2} 0 0"/>
         </xacro:inertial_cylinder>
     </link>
@@ -234,7 +234,7 @@
             </geometry>
             
         </collision>
-        <xacro:inertial_cylinder mass="0.5" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
+        <xacro:inertial_cylinder mass="1" length="0.06" radius="0.0775"> <!-- 15.5 cm çap, 6 cm yükseklik -->
             <origin xyz="-0.225 -0.228 0.0825" rpy="-${pi/2} 0 0"/>
         </xacro:inertial_cylinder>
     </link>
